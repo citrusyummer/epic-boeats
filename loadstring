@@ -1,1 +1,3 @@
-
+getgenv().SecureMode = false
+--if your game is detecting the gui set the above to true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AVeryBrokenNPC/epic-boeats/main/source"))()
