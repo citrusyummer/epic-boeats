@@ -1,48 +1,73 @@
 writefile("epic boeats user certificate.txt","use this to show that you think spotify sucks + youtube music + every single music streaming platform")
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("epic boeats v1.01", "DarkTheme")
-local Tab = Window:NewTab("soeangs")
-local songs = Tab:NewSection("soeangs")
-songs:NewButton("ROA - Fighter Select 2", "", function()
-local song = Instance.new("Sound",workspace)
-song.SoundId = 'rbxassetid://'..8710359229
-song:Play()
-song.Looped = true
-end)
-songs:NewButton("Opera GX - Evolve", "", function()
-local song2 = Instance.new("Sound",workspace)
-song2.SoundId = 'rbxassetid://'..7003104281
-song2:Play()
-song2.Looped = true
-end)
-local controls = Tab:NewSection("coaentrols")
-controls:NewButton("stop", "", function()
-    workspace.Sound:Destroy()
-end)
-controls:NewButton("pause", "", function()
-    workspace.Sound:Pause()
-end)
-controls:NewButton("unpause", "", function()
-    workspace.Sound:Resume()
-end)
-local custom = Tab:NewSection("custom")
-custom:NewTextBox("ID here", "", function(txt)
-	local customsong = Instance.new("Sound",workspace)
-    customsong.SoundId = 'rbxassetid://'..txt
-    customsong:Play()
-    customsong.Looped = true
-end)
-local settings = Window:NewTab("settings")
-local settingsec = settings:NewSection("settings")
-settingsec:NewKeybind("toggle ui", "", Enum.KeyCode.M, function()
-	Library:ToggleUI()
-end)
-settingsec:NewButton("why i made this", "copies to clipboard", function()
-    local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
-    clipBoard("https://textbin.net/raw/zqi7uaaoem")
-end)
-settingsec:NewButton("what's new", "copies link", function()
-    local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
-    clipBoard("https://textbin.net/raw/asj25hhq81")
-end)
-    
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+Name = "epic boeats",
+LoadingTitle = "epic boeats",
+LoadingSubtitle = "version 2.00",
+ConfigurationSaving = {
+	Enabled = false,
+	FileName = "sex",
+},
+KeySystem = false,
+KeySettings = {
+	Title = "sex",
+	Subtitle = "sex",
+	Note = "sex",
+	Key = "sex"
+}
+})
+local controls = Window:CreateTab("coaentrols")
+local stopButton = controls:CreateButton({
+	Name = "stop",
+	Callback = function()
+		workspace.EB_Custom:Destroy()
+	end,
+})
+local pauseButton = controls:CreateButton({
+	Name = "pause",
+	Callback = function()
+		workspace.EB_Custom:Pause()
+	end,
+})
+local unpauseButton = controls:CreateButton({
+	Name = "unpause",
+	Callback = function()
+		workspace.EB_Custom:Resume()
+	end,
+})
+local volupButton = controls:CreateButton({
+	Name = "volume up",
+	Callback = function()
+		workspace.EB_Custom.Volume = workspace.EB_Custom.Volume + 0.1
+	end,
+})
+local voldwnButton = controls:CreateButton({
+	Name = "volume down",
+	Callback = function()
+		workspace.EB_Custom.Volume = workspace.EB_Custom.Volume - 0.1
+	end,
+})
+local custom = Window:CreateTab("custom")
+local customInput = custom:CreateInput({
+	Name = "custom audio",
+	PlaceholderText = "audio id here",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(txt)
+        local customsong = Instance.new("Sound",workspace)
+        customsong.SoundId = 'rbxassetid://'..txt
+        customsong:Play()
+        customsong.Looped = true
+        customsong.Name = 'EB_Custom'
+	end,
+})
+local settings = Window:CreateTab("settings (not really)")
+local lol = settings:CreateLabel("its called settings but the thing that made it settings is gone")
+local lol2 = settings:CreateLabel("i will attempt to bring some of the removed features back (EXCEPT soeangs which will not work because of the march update")
+local whyimade = settings:CreateParagraph({Title = "why i made this", Content = "made this because i had an idea, a really bad idea lol. its client sided and no one else can hear it but atleast its different"})
+--[[local whatsnew = settings:CreateLabel("MAJOR UPDATE HERE BOYS")
+local whatsnew2 = settings:CreateLabel("ported ui over to rayfield interface suite")
+local whatsnew3 = settings:CreateLabel("removed soeangs, hide ui and the copy links on settings, to make up i have added volume up and down settings")
+local whatsnew4 = settings:CreateLabel("--sorry about those features removed rayfield is just slightly limited rn")
+local whatsnew5 = settings:CreateLabel("attempted to fix conflicts with unnamed audio in workspace and songs from EB")
+]] --remove the notes to get a different type of changelog
+local changelog = settings:CreateParagraph({Title = "changelog", Content = "MAJOR UPDATE HERE BOYS.. ported ui over to rayfield interface suite.. removed soeangs, hide ui and the copy links on settings, to make up i have added volume up and down settings in control.. --sorry about those features removed rayfield is just slightly limited rn.. attempted to fix conflicts with unnamed audio in workspace and songs from EB"})    
