@@ -1,11 +1,12 @@
 # epic-boeats
+### notice: currently not working on this
 ![version number](https://img.shields.io/badge/version-v2.00-brightgreen?labelColor=black)
+## snazzy-ish music player on roblox.
 \
-a music player script for roblox, it's client sided so it should be undetected
+Completely open source.
 \
-(note: as of the march update you have to play your own uploaded music)
+..Also versions are archived.
 \
-this is COMPLETELY open source because i shouldnt be obfuscating a damn music player i dont spend all my time working on
+Loadstring down here:
 \
-use the newest version here:
-https://raw.githubusercontent.com/AVeryBrokenNPC/epic-boeats/main/loadstring
+```https://raw.githubusercontent.com/snuzzly/epic-boeats/main/loadstring```
