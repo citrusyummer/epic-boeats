@@ -1,1 +1,1 @@
-`This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/`
+`Licensed under myself, you can use this commercially without taking advantage, you CAN edit this work though indicating changes. Credit must be given if work is used in any of these ways.`
