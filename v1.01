@@ -1,3 +1,4 @@
+--don't use this normally.
 writefile("epic boeats user certificate.txt","use this to show that you think spotify sucks + youtube music + every single music streaming platform")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("epic boeats v1.01", "DarkTheme")
