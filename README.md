@@ -9,4 +9,4 @@ Now in the public domain because I don't have anymore plans for it
 \
 Loadstring down here:
 \
-```https://raw.githubusercontent.com/snuzzly/epic-boeats/main/loadstring```
+```https://raw.githubusercontent.com/chiptunewav/epic-boeats/main/loadstring```
