@@ -1,3 +1,5 @@
+##### the might was a no
+\
 \## NOTICE\
 EPIC BOEATS is meant to be used by exploits from it's design, and the use of an 'exploiter' UI library.
 As of November, Synapse X has shut down and partnered with ROBLOX. This could **completely end exploiting** altogether.
