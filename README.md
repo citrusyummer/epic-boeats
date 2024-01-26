@@ -1,10 +1,9 @@
 # epic-boeats
 ## PLEASE READ NOTICE.MD 
-### notice: currently not working on this
 ![version number](https://img.shields.io/badge/version-v2.00-brightgreen?labelColor=black)
 ## snazzy-ish music player on roblox.
 \
-Completely open source.
+Now in the public domain because I don't have anymore plans for it
 \
 ..Also versions are archived.
 \
